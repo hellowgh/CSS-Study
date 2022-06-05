@@ -1,0 +1,29 @@
+:root {
+    /* 颜色变量 */
+    --text-color: #fff;
+    --title-color: #ccc;
+    --background-color: #ccc;
+
+    /* 尺寸变量 */
+
+    /* 基础字号 */
+
+
+    /* 页面初始化 */
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    background-color: var(--background-color);
+}
