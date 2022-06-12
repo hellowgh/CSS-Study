@@ -10,6 +10,7 @@
         .container {
             background-color: #ccc;
             display: grid;
+            grid-gap: 1em;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-template-areas: "header header"
@@ -30,6 +31,7 @@
     </style>
 </head>
 <body>
+    <h3>grid布局可以给网格线或者网格区域命名，方便后续子元素使用，特别是区域命名，语义化很好</h3>
     <div class="container">
         <div class="header"></div>
         <div class="nav"></div>
