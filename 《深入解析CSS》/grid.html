@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid布局</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr) 2fr; /*注意！中间没有逗号*/
+            grid-template-columns: repeat(3, 1fr);
+            height: 600px;
+            background-color: #ccc;
+        }
+
+        div {
+            background-color: skyblue;
+        }
+
+        .item1 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+    <p>
+        因为 Flexbox 是一维的，所以它很适合用在相似的元素组成的行（或列）上。它支持用flex-wrap 换行，但是没法让上一行元素跟下一行元素对齐。相反，网格是二维的，旨在解决一个轨道的元素跟另一个轨道的元素对齐的问题
+    </p>
+</body>
+</html>
